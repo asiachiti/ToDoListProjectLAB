@@ -1,0 +1,23 @@
+# File generati da CMake
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+Makefile
+*.cmake
+
+# CLion (JetBrains)
+.idea/
+*.iml
+
+# Output binari
+*.o
+*.out
+*.exe
+
+# Test temporanei
+test_lista_temp.txt
+
+# Librerie scaricate
+test/lib/googletest/build/
+test/lib/googletest/.vs/
+test/lib/googletest/.idea/
