@@ -3,7 +3,6 @@ CMakeFiles/
 CMakeCache.txt
 cmake-build-*/
 Makefile
-*.cmake
 
 # CLion (JetBrains)
 .idea/
