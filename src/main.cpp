@@ -6,7 +6,7 @@ int main() {
     ToDoList lista;
     std::string scelta;
 
-    while (true) {
+    while (true) { //std::count stampa a video una stringa o un valore
         std::cout << "\n--- MENU ---\n";
         std::cout << "1. Aggiungi nuova attività\n";
         std::cout << "2. Completa attività\n";
@@ -15,7 +15,7 @@ int main() {
         std::cout << "5. Carica da file\n";
         std::cout << "6. Esci\n";
         std::cout << "Scelta: ";
-        std::getline(std::cin, scelta);
+        std::getline(std::cin, scelta); //std::cin usato con getline serve per leggere le scelte dell'utente
 
         if (scelta == "1") {
             std::string desc;
@@ -29,8 +29,8 @@ int main() {
             std::cout << "Numero dell'attività da completare: ";
             std::string input;
             std::getline(std::cin, input);
-            try {
-                int indice = std::stoi(input);
+            try { //try catch gestiscono errori, se nl try succede un errore si entra nel catch
+                int indice = std::stoi(input); //stoi converte una stringa in un intero: sreve per trasformare la scelta dell'utente (letta come stringa) in un numero da usare con vector
                 lista.completaAttivita(static_cast<size_t>(indice - 1));
                 std::cout << "Attività completata.\n";
             } catch (...) {

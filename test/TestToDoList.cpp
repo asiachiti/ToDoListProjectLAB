@@ -3,6 +3,7 @@
 #include <fstream>
 #include <cstdio>
 
+// UNA SERIE DI TEST SCRITTI CON GOOGLE TEST PER VERIFICARE TUTTE LE FUNZIONI DELLA TODOLIST
 TEST(ToDoListTest, ListaVuota) {
     ToDoList lista;
     EXPECT_EQ(lista.numeroAttivita(), 0);

@@ -1,6 +1,7 @@
 #include "gtest/gtest.h"
 #include "Attivita.h"
 
+// UNA SERIE DI TEST SCRITTI CON GOOGLE TEST PER VERIFICARE CHE LA CLASSE ATTIVITA FUNZIONI
 TEST(AttivitaTest, CostruttoreDefault) {
     Attivita a;
     EXPECT_EQ(a.getDescrizione(), "");
